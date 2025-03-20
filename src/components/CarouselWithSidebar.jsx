@@ -14,6 +14,9 @@ export const CarouselWithSidebar = () => {
           <p className="hidden px-2 min-[805px]:block mt-4 text-lg text-white text-center min-[805px]:text-right">
             The indigenous and endangered people of Japan.
           </p>
+          <p className="hidden px-2 min-[805px]:block mt-4 text-lg text-white text-center min-[805px]:text-right">
+            By Jett Kopalek
+          </p>
         </div>
 
         {/* Right Column: Image (Ensuring Full Width, No Extra Space) */}

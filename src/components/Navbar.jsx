@@ -21,22 +21,22 @@ export const Navbar = () => {
 
         {/* Right: Toggle Button */}
         <div className="relative">
-          <button onClick={toggleNavbar} className="focus:outline-none">
+          <button onClick={toggleNavbar} className="focus:outline-hidden">
             {isOpen ? <X className="text-white" size={32} /> : <Menu className="text-white" size={32} />}
           </button>
 
           {/* 🔹 Dropdown Menu */}
           <div
-            className={`absolute right-[-10px] top-[70px] w-64 bg-red-800 text-white rounded-lg shadow-lg z-[100] transition-all duration-300 ${
+            className={`absolute right-[-10px] top-[70px] w-64 bg-red-800 text-white rounded-lg shadow-lg z-100 transition-all duration-300 ${
               isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
           >
             <div className="flex flex-col p-5 space-y-4 text-xl">
-              <Link to="language-profile" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded">Language Profile</Link>
-              <Link to="cultural-identity" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded">Cultural Identity</Link>
-              <Link to="endangerment-factors" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded">Endangerment Factors</Link>
-              <Link to="revitalization-efforts" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded">Revitalization Efforts</Link>
-              <Link to="personal-reflection" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded">Personal Reflection</Link>
+              <Link to="language-profile" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded-sm">Language Profile</Link>
+              <Link to="cultural-identity" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded-sm">Cultural Identity</Link>
+              <Link to="endangerment-factors" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded-sm">Endangerment Factors</Link>
+              <Link to="revitalization-efforts" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded-sm">Revitalization Efforts</Link>
+              <Link to="personal-reflection" smooth={true} duration={500} className="cursor-pointer hover:bg-amber-700 p-3 rounded-sm">Personal Reflection</Link>
 
             </div>
           </div>

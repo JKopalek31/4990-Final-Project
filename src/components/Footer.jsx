@@ -4,7 +4,7 @@ import logo from "../assets/footerLogo.png"; // Adjust the path as needed
 export const Footer = () => {
   return (
     <footer className="bg-red-800 text-gray-300 py-4 px-0 text-left">
-      <div className="max-w-screen-lg mx-auto flex flex-col space-y-2 items-start">
+      <div className="max-w-(--breakpoint-lg) mx-auto flex flex-col space-y-2 items-start">
         {/* Logo */}
         <img 
           src={logo} 

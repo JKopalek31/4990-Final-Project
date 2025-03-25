@@ -2,10 +2,10 @@ import React from "react";
 
 export const Title = () => {
   return (
-    <div className="w-full px-8 py-8 bg-white text-slate-800 shadow-lg">
-        <div className="bg-blue-400 rounded-lg px-4 py-4">
+    <div className="w-full px-8 py-8 bg-maroon text-slate-800 shadow-lg ">
+        <div className="bg-offwhite rounded-lg px-4 py-4">
         {/* Title Text */}
-        <p className="text-lg leading-relaxed font-medium mb-6 ">
+        <p className="text-lg leading-relaxed font-medium mb-6">
           This project is the final project for 
           <strong> St. John Fisher University's Cardinal Experience</strong> class, 
           taught by <strong>Professor Marina Bonilla-Conejo</strong>. As a sociolinguist, 

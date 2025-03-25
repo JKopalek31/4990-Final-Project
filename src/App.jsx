@@ -6,7 +6,9 @@ import {Carousel} from './components/Carousel'
 import { Title } from './components/Title'
 import { CarouselWithSidebar } from './components/CarouselWithSidebar'
 import { Routes, Route } from "react-router-dom";
-import { Footer } from './components/footer'
+import { Footer } from './components/footer';
+import { SmoothScrollAinu } from './components/SmoothScrollAinu';
+import {ContentHeader} from './components/ContentHeader';
 
 
 import { LanguageProfile } from './content/LanguageProfile'
@@ -23,12 +25,9 @@ function App() {
       <Navbar />
       <CarouselWithSidebar />
       <Title />
-
-      <div className="flex size-48">
-        <h1>cheese</h1>
-      </div>
       <Carousel />
-      <h1>Yolo</h1>
+      <SmoothScrollAinu/>      
+
       <LanguageProfile />
       <CulturalIdentity />
       <EndangermentFactors />

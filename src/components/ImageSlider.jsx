@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 
 export const ImageSlider = () => {
   const images = [
-    "https://picsum.photos/800/300?random=1",
-    "https://picsum.photos/800/300?random=2",
-    "https://picsum.photos/800/300?random=3",
+    "https://picsum.photos/800/620?random=1",
+    "https://picsum.photos/800/620?random=2",
+    "https://picsum.photos/800/620?random=3",
   ];
   const [index, setIndex] = useState(0);
 

@@ -3,7 +3,7 @@ import logo from "../assets/footerLogo.png"; // Adjust the path as needed
 
 export const Footer = () => {
   return (
-    <footer className="bg-red-800 text-gray-300 py-4 px-0 text-left">
+    <footer className="bg-maroon text-gray-300 py-4 px-0 text-left">
       <div className="max-w-(--breakpoint-lg) mx-auto flex flex-col space-y-2 items-start">
         {/* Logo */}
         <img 

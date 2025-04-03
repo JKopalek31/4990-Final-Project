@@ -13,7 +13,9 @@ export const Navbar = () => {
   return (
     <>
       {/* 🔹 Fixed Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-salmon z-50 px-6 py-3 flex items-center justify-between h-20">
+      {/* <nav className="fixed top-0 left-0 w-full bg-coffee z-50 px-6 py-3 flex items-center justify-between h-20"> */}
+      <nav className="fixed top-0 left-0 w-full bg-offwhite z-50 px-6 py-3 flex items-center justify-between h-20">
+
         {/* Left: Logo */}
         <div className="flex items-center space-x-6">
           <img src={logo} alt="logo" className="h-14 w-auto object-contain" />
@@ -22,7 +24,7 @@ export const Navbar = () => {
         {/* Right: Toggle Button */}
         <div className="relative">
           <button onClick={toggleNavbar} className="focus:outline-hidden">
-            {isOpen ? <X className="text-white" size={32} /> : <Menu className="text-white" size={32} />}
+            {isOpen ? <X className="text-slate-800" size={32} /> : <Menu className="text-slate-800" size={32} />}
           </button>
 
           {/* 🔹 Dropdown Menu */}

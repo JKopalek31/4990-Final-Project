@@ -30,7 +30,7 @@ export const ContentHeader = ({ image, title, description }) => {
         />
         <div className="md:w-1/2 md:pl-10 text-left md:text-left">
           <h3 className="text-7xl text-maroon font-bold mb-2">{title}</h3>
-          <p className="text-black text-4xl" >{description}</p>
+          <p className="text-slate-800 text-4xl" >{description}</p>
         </div>
       </div>
     </ScrollAnimation>

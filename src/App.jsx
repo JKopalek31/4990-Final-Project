@@ -6,7 +6,7 @@ import {Carousel} from './components/Carousel'
 import { Title } from './components/Title'
 import { CarouselWithSidebar } from './components/CarouselWithSidebar'
 import { Routes, Route } from "react-router-dom";
-import { Footer } from './components/footer';
+import { Footer } from './components/Footer';
 import { SmoothScrollAinu } from './components/SmoothScrollAinu';
 import {ContentHeader} from './components/ContentHeader';
 
@@ -25,7 +25,7 @@ function App() {
       <Navbar />
       <CarouselWithSidebar />
       <Title />
-      <Carousel />
+      {/* <Carousel /> */}
       <SmoothScrollAinu/>      
 
       <LanguageProfile />

@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from "framer-motion";
 
-import { ContentHeader } from '../components/ContentHeader'
-import AinuPopulationGraph from '../components/populationGraph';
+import { RightContentHeader } from '../../components/RightContentHeader'
+import AinuPopulationGraph from '../../components/populationGraph';
 
-import location from '../assets/ainuLocation.png'
+import location from '../../assets/ainuLocation.png'
 
 export const LanguageProfile = () => {
   const headingRef = useRef(null);
@@ -57,8 +57,8 @@ export const LanguageProfile = () => {
 
 
   return (
-    <section id="language-profile" className="h-auto bg-offwhite pt-10 mb-0">
-        <ContentHeader
+    <section id="language-profile" className="h-auto bg-offwhite pt-20 mb-0">
+        <RightContentHeader
           image="https://picsum.photos/800/600?random=1"
           title="Language Profile"
           description="Explore the origins and traditions of the Ainu people."

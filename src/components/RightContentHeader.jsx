@@ -1,14 +1,8 @@
-// ScrollAnimation.jsx must export a component using `useInView` + `motion.div`
-
 import React from "react";
 import ScrollAnimation from "../utils/ScrollAnimation.jsx";
 
 
-
-
-
-
-export const ContentHeader = ({ image, title, description }) => {
+export const RightContentHeader = ({ image, title, description }) => {
     const features = [
         {
           id: 1,
@@ -29,7 +23,7 @@ export const ContentHeader = ({ image, title, description }) => {
           alt={title}
         />
         <div className="md:w-1/2 md:pl-10 text-left md:text-left">
-          <h3 className="text-7xl text-maroon font-bold mb-2">{title}</h3>
+          <h3 className="text-7xl text-maroon font-bold mb-2 pb-4">{title}</h3>
           <p className="text-slate-800 text-4xl" >{description}</p>
         </div>
       </div>

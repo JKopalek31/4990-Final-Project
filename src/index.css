@@ -12,6 +12,13 @@
   --color-coffee: #E5AA70;
 }
 
+/* *{overflow-x: hidden;} */
+
+html,
+body {
+  @apply overflow-x-hidden;
+}
+
 @layer base {
   *,
   ::after,

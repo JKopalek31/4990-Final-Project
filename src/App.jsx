@@ -8,14 +8,15 @@ import { CarouselWithSidebar } from './components/CarouselWithSidebar'
 import { Routes, Route } from "react-router-dom";
 import { Footer } from './components/Footer';
 import { SmoothScrollAinu } from './components/SmoothScrollAinu';
-import {ContentHeader} from './components/ContentHeader';
+// import {ContentHeader} from './components/ContentHeader';
 
 
-import { LanguageProfile } from './content/LanguageProfile'
-import { CulturalIdentity } from './content/CulturalIdentity'
-import { EndangermentFactors } from './content/EndangermentFactors'
+import { LanguageProfile } from './content/language-profile/LanguageProfile'
+import { CulturalIdentity } from './content/cultural-identity/CulturalIdentity'
+import { EndangermentFactors } from './content/endangerment-factors/EndangermentFactors'
 import { RevililizationEfforts } from './content/RevililizationEfforts'
-import { PersonalReflection } from './content/PersonalReflection'
+import { PersonalReflection } from './content/personal-reflection/PersonalReflection'
+import { ImageEffect } from './components/ImageEffect'
 
 
 function App() {
@@ -25,15 +26,16 @@ function App() {
       <Navbar />
       <CarouselWithSidebar />
       <Title />
-      {/* <Carousel /> */}
       <SmoothScrollAinu/>      
 
       <LanguageProfile />
-      <CulturalIdentity />
+      <CulturalIdentity />    
       <EndangermentFactors />
       <RevililizationEfforts />
       <PersonalReflection />
       <Carousel />
+
+      <ImageEffect/>
 
       <Footer/>
     </>

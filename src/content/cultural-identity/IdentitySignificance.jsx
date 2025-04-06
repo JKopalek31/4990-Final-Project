@@ -12,7 +12,7 @@ const IdentitySignificance = () => {
   const barInView = useInView(barRef, { once: false, threshold: 0.2 });
 
   return (
-    <motion.div className="w-auto h-auto pt-32 pb-40 p-0 m-0 px-40 py-0 z-0">
+    <motion.div className="w-auto h-auto pt-32 pb-40 p-0 mb-32 px-40 py-0 z-0">
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 30 }}

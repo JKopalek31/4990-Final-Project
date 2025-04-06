@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import ScrollRevolverText from "../../components/VelocityScrollText"
 
 const sampleCards = [
   {
@@ -52,6 +53,8 @@ export default function InfiniteCardSlider({ cards = sampleCards }) {
           </div>
         ))}
       </motion.div> */}
+      <ScrollRevolverText/>
+
       <motion.div
             style={sliderTrack}
             animate={{ x: ['0%', '-50%'] }}
@@ -76,13 +79,16 @@ export default function InfiniteCardSlider({ cards = sampleCards }) {
 const sliderContainer = {
   overflow: "hidden",
   width: "100%",
-  padding: "32px 0",
+  padding: "100px 0 100px 0",
 }
 
 const sliderTrack = {
   display: "flex",
   gap: "20px",
   width: "fit-content",
+  marginTop: "100px",
+  marginBottom: "250px"
+
 }
 
 const cardStyle = {

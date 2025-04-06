@@ -8,13 +8,15 @@ import React, { useRef } from 'react'
 
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
+// import RecordWithSoundBubble from "./CultureCardsTitle"
 
 
 
 export default function CultureCards() {
     return (
-
         <div style={container}>
+            {/* <RecordWithSoundBubble/> */}
+
             {food.map(([emoji, colorA, colorB, text], i) => (
                 <Card i={i} emoji={emoji} colorA={colorA} colorB={colorB} text={text} key={emoji} />
             ))}
@@ -112,7 +114,7 @@ const cardVariants = {
 }
 
 const container = {
-    margin: "100px auto",
+    margin: "450px auto",
     maxWidth: 1400,
     paddingBottom: 100,
     width: "100%",
@@ -121,6 +123,8 @@ const container = {
     gap: 60,
     paddingLeft: 80,
     paddingRight: 80,
+
+    // marginTop: 20,
     // background: "red"
   }
 
@@ -130,8 +134,8 @@ const cardContainer = {
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
-    paddingTop: 20,
-    marginBottom: -120,
+    paddingTop: 200,
+    // marginBottom: -120,
     width: "100%",
     zIndex: 1,
 }

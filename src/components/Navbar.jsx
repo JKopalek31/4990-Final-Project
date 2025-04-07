@@ -98,7 +98,7 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`absolute right-[-10px] top-[70px] w-64 bg-maroon text-offwhite rounded-lg shadow-lg z-100 transition-all duration-300 ${
+          className={`absolute right-[-10px] top-[70px] w-64 bg-transparent backdrop-blur-lg text-maroon rounded-lg border border-maroon z-100 transition-all duration-300 ${
             isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
           }`}
         >

@@ -159,7 +159,7 @@ export default function RecordWithSoundAndBook() {
           }}
           transition={{ type: "spring", stiffness: 300, damping: 18 }}
         >
-          <p style={styles.bubbleText}>“🎵 SMedia”</p>
+          <p style={styles.bubbleText}>“Media”</p>
         </motion.div>
 
         {/* Flipping Book */}

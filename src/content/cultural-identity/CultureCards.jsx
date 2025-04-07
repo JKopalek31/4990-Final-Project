@@ -36,7 +36,7 @@ function Card({ emoji, colorA, colorB, text, i }) {
     return (
         <motion.div
             className={`card-container-${i}`}
-            style={{ ...cardContainer, marginTop: 60 }}
+            style={{ ...cardContainer, marginTop: 40 }}
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ amount: 0.8 }}
@@ -116,16 +116,13 @@ const cardVariants = {
 const container = {
     margin: "450px auto",
     maxWidth: 1400,
-    paddingBottom: 100,
+    paddingBottom: 40,
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    gap: 60,
+    gap: 10,
     paddingLeft: 80,
     paddingRight: 80,
-
-    // marginTop: 20,
-    // background: "red"
   }
 
 const cardContainer = {
@@ -134,10 +131,12 @@ const cardContainer = {
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
-    paddingTop: 200,
+    paddingTop: 150,
+    paddingBottom: 30,
     // marginBottom: -120,
     width: "100%",
     zIndex: 1,
+    // background: "red",
 }
 
 const splash = {

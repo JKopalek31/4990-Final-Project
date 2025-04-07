@@ -12,7 +12,7 @@ import RecordWithSoundBubble from "./CultureCardsTitle"
 export const CulturalIdentity = () => {
   return (
     // <div>CulturalIdentity</div>
-    <section id="cultural-identity" className="h-auto bg-offwhite pt-20">
+    <section id="cultural-identity" className="h-auto bg-offwhite pt-20 pb-20">
         {/* <h1 className="text-2xl px-2 md:text-4xl lg:text-6xl font-bold text-maroon text-left">Cultural Identity</h1> */}
         {/* <>         */}
         <LeftContentHeader
@@ -31,8 +31,6 @@ export const CulturalIdentity = () => {
         {/* <div className="h-96x bg-amber-300">Oral traditions, literature, or media</div> */}
 
         <CultureCards/>
-        <div className="h-40 bg-offwhite"/>
-
         
     </section>
   )

@@ -5,16 +5,16 @@ export default function PulsingBorderCard() {
 
   return (
     <motion.div
-      className="p-[6px] rounded-xl bg-gradient-to-r from-maroon via-pink-400 to-salmon"
+      className="p-[6px] rounded-xl bg-gradient-to-r from-maroon via-pink-200 to-salmon"
       style={{
         backgroundSize: '300% 300%',
         animation: 'borderMotion 5s linear infinite',
       }}
     >
-      <div className="bg-offwhite rounded-xl p-10 text-center text-6xl text-slate-800">
+      <div className="bg-offwhite rounded-xl p-10 text-center text-6xl text-maroon">
         {text}
       </div>
-
+      
       {/* Inline keyframes */}
       <style>{`
         @keyframes borderMotion {

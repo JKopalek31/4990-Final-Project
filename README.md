@@ -24,13 +24,13 @@ The Ainu people are the Indigenous inhabitants of Hokkaido, Japan. Their languag
 ---
 
 ## Dependencies
-- ** Node: **
-'''bash npm install
-- ** Framer Motion: **
-'''bash npm install framer-motion
-
-
-
+1. **Node**
+   ```bash
+   npm install
+1. **Framer Motion**
+   ```bash
+   npm install framer-motion
+   
 
 ---
 

@@ -28,3 +28,9 @@ body {
     border-color: var(--color-gray-200, currentColor);
   }
 }
+
+@layer utilities {
+  .font-[cursive] {
+    font-family: 'Dancing Script', cursive;
+  }
+}

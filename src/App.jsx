@@ -1,5 +1,5 @@
 import { useState } from 'react'
-// import './App.css'
+import './App.css'
 // import Navbar from './components/Navbar.jsx'
 import  {Navbar}  from './components/Navbar'
 import {Carousel} from './components/Carousel'
@@ -14,7 +14,7 @@ import { SmoothScrollAinu } from './components/SmoothScrollAinu';
 import { LanguageProfile } from './content/language-profile/LanguageProfile'
 import { CulturalIdentity } from './content/cultural-identity/CulturalIdentity'
 import { EndangermentFactors } from './content/endangerment-factors/EndangermentFactors'
-import { RevililizationEfforts } from './content/RevililizationEfforts'
+import { RevililizationEfforts } from './content/revitilization-efforts/RevililizationEfforts'
 import { PersonalReflection } from './content/personal-reflection/PersonalReflection'
 import { ImageEffect } from './components/ImageEffect'
 
@@ -33,9 +33,12 @@ function App() {
       <EndangermentFactors />
       <RevililizationEfforts />
       <PersonalReflection />
-      <Carousel />
 
-      <ImageEffect/>
+
+
+
+      {/* <Carousel /> */}
+      {/* <ImageEffect/> */}
 
       <Footer/>
     </>

@@ -14,7 +14,7 @@ import SpringCard from '../endangerment-factors/PreservationEfforts'
 export const PersonalReflection = () => {
   return (
     // <div>PersonalReflection</div>
-    <section id="personal-reflection" className="h-auto bg-amber-400 pt-10 pb-60">
+    <section id="personal-reflection" className="h-auto bg-amber-400 pt-10 pb-60 mt-40">
         <h1 className="text-2xl px-2 md:text-4xl lg:text-6xl font-bold text-maroon text-left">Personal Reflection</h1>
         {/* <Reflection/> */}
         {/* <SpringCard

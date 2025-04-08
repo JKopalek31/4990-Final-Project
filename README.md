@@ -19,15 +19,15 @@ The Ainu people are the Indigenous inhabitants of Hokkaido, Japan. Their languag
 - **Frontend**: React.js
 - **Styling**: Tailwind CSS
 - **Animation**: Framer Motion
-- **Deployment**: GitHub Pages / Netlify (optional)
+- **Deployment**: Coming Soon
 
 ---
 
 ## Dependencies
-1. **Node**
+- **Node**
    ```bash
    npm install
-1. **Framer Motion**
+- **Framer Motion**
    ```bash
    npm install framer-motion
    
@@ -36,7 +36,7 @@ The Ainu people are the Indigenous inhabitants of Hokkaido, Japan. Their languag
 
 ## Installation
 
-1. **Clone the repository**
+- **Clone the repository**
    ```bash
    git clone https://github.com/your-username/ainu-language-poster.git
    cd ainu-language-poster

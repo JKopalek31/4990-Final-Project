@@ -1,6 +1,4 @@
 import React from "react";
-// import hero from "../assets/hero.webp"
-import hero2 from "../assets/hero2.jpeg"
 import { ImageSlider } from "./ImageSlider";
 
 export default function AinuHeritageWaveHeroWithSlider() {
@@ -12,31 +10,25 @@ export default function AinuHeritageWaveHeroWithSlider() {
         overflow-hidden
       "
     >
-      {/* ------------------------------------------------
-          A) The slider behind everything 
-         ------------------------------------------------ */}
+      {/* A) The slider behind everything */}
       <div className="absolute inset-0 z-0">
         <ImageSlider />
       </div>
 
       {/* B) Light overlay so text is readable */}
-      <div className="absolute inset-0 bg-pink bg-opacity-50 z-10"></div>
+      {/* <div className="absolute inset-0 bg-black/5 z-10"></div> */}
 
-      {/* ------------------------------------------------
-          C) Floating text with custom keyframes
-         ------------------------------------------------ */}
+      {/* C) Floating text with custom keyframes */}
       <style>
         {`
           @keyframes floatUpDownTitle {
             0%, 100% { transform: translateY(0); }
             50%      { transform: translateY(-10px); }
           }
-          
           @keyframes floatUpDownParagraph {
             0%, 100% { transform: translateY(0); }
             50%      { transform: translateY(-6px); }
           }
-
           .float-up-down-title {
             animation: floatUpDownTitle 3s ease-in-out infinite;
           }
@@ -50,24 +42,48 @@ export default function AinuHeritageWaveHeroWithSlider() {
       </style>
 
       {/* D) Hero Content */}
-      <div className="relative z-20 max-w-3xl px-4 py-8 text-offwhite">
-        {/* Title floating on a 3s cycle */}
-        <h1 className="float-up-down-title text-8xl font-extrabold mb-4">
+      <div className="relative z-20 max-w-3xl px-4 py-8">
+        {/* Title with a gradient from maroon to white */}
+        <h1
+          className="
+            float-up-down-title
+            text-9xl
+            font-extrabold
+            mb-4
+            bg-gradient-to-b
+            from-maroon
+            to-offwhite
+            bg-clip-text
+            text-transparent
+          "
+        >
           Ainu
         </h1>
 
-        {/* Paragraphs each with different durations */}
-        <p className="float-up-down-text-1 text-3xl  mb-6">
+        {/* Paragraphs: plain text color, still floating */}
+        <p
+          className="
+            float-up-down-text-1
+            text-4xl
+            mb-6
+            text-offwhite
+          "
+        >
           The indigenous and endangered people of Japan
         </p>
-        <p className="float-up-down-text-2 text-3xl mb-6">
+        <p
+          className="
+            float-up-down-text-2
+            text-4xl
+            mb-6
+            text-white
+          "
+        >
           By Jett Kopalek
         </p>
       </div>
 
-      {/* ------------------------------------------------
-          E) Off-white Wave at the bottom
-         ------------------------------------------------ */}
+      {/* E) Off-white Wave at the bottom */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-20">
         <svg
           className="relative block w-[calc(100%+1.3px)] h-[120px]"

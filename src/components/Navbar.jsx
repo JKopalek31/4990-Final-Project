@@ -78,6 +78,9 @@ export const Navbar = () => {
             <Link to="personal-reflection" smooth duration={500} className="cursor-pointer hover:border border-offwhite p-3 rounded-sm">
               Personal Reflection
             </Link>
+            <Link to="works-cited" smooth duration={500} className="cursor-pointer hover:border border-offwhite p-3 rounded-sm">
+              Works Cited
+            </Link>
           </div>
         </div>
       </div>

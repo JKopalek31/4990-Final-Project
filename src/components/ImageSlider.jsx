@@ -1,3 +1,4 @@
+import hero from "../assets/hero.webp"
 import hero2 from "../assets/hero2.jpeg"
 import hero3 from "../assets/hero3.jpg"
 import hero4 from "../assets/hero4.jpg"
@@ -7,6 +8,7 @@ import React, { useEffect, useState } from "react";
 export const ImageSlider = () => {
   // Same images + fade logic as before
   const images = [
+    hero,
     hero2,
     hero3,
     hero4,

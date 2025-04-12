@@ -19,7 +19,8 @@
     "react-router-dom": "^7.3.0",
     "react-scroll": "^1.9.3",
     "recharts": "^2.15.2",
-    "scroll": "^3.0.1"
+    "scroll": "^3.0.1",
+    "tailwind-scrollbar-hide": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

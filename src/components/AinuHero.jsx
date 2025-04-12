@@ -1,7 +1,7 @@
 import React from "react";
 import { ImageSlider } from "./ImageSlider";
 
-export default function AinuHeritageWaveHeroWithSlider() {
+export default function AinuHero() {
   return (
     <header
       className="
@@ -11,7 +11,7 @@ export default function AinuHeritageWaveHeroWithSlider() {
       "
     >
       {/* A) The slider behind everything */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full">
         <ImageSlider />
       </div>
 
@@ -50,11 +50,13 @@ export default function AinuHeritageWaveHeroWithSlider() {
             text-9xl
             font-extrabold
             mb-4
-            bg-gradient-to-b
-            from-maroon
-            to-offwhite
+            bg-gradient-to-r
+            from-red-500
+            via-salmon
+            to-red-500
             bg-clip-text
             text-transparent
+            show-xl
           "
         >
           Ainu
@@ -66,7 +68,8 @@ export default function AinuHeritageWaveHeroWithSlider() {
             float-up-down-text-1
             text-4xl
             mb-6
-            text-offwhite
+            text-pink-100
+            text-bold
           "
         >
           The indigenous and endangered people of Japan
@@ -76,7 +79,7 @@ export default function AinuHeritageWaveHeroWithSlider() {
             float-up-down-text-2
             text-4xl
             mb-6
-            text-white
+            text-offwhite
           "
         >
           By Jett Kopalek

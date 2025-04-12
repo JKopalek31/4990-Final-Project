@@ -26,7 +26,7 @@ import { WorksCited } from './content/works-cited/WorksCited'
 function App() {
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       {/* <CarouselWithSidebar /> */}
 
@@ -49,7 +49,7 @@ function App() {
       {/* <ImageEffect/> */}
 
       <Footer/>
-    </>
+    </div>
   )
 }
 

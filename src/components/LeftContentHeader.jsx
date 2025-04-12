@@ -19,7 +19,7 @@ export const LeftContentHeader = ({ image, title, description }) => {
     >
       <div className="flex flex-col md:flex-row pb-32 items-center bg-offwhite p-4 rounded-xl">
         <div className="md:w-1/2 md:pl-10 text-left md:text-left">
-          <h3 className="text-7xl text-maroon font-bold mb-2 pb-4">{title}</h3>
+          <h3 className="text-7xl sm:text-6xl text-maroon font-bold mb-2 pb-4">{title}</h3>
           <p className="text-slate-800 text-4xl" >{description}</p>
         </div>
         <img

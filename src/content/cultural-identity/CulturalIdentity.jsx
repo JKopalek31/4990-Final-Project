@@ -25,7 +25,7 @@ export const CulturalIdentity = () => {
 
         <InfiniteCardSlider/>
 
-        <RecordWithSoundBubble/>
+        {/* <RecordWithSoundBubble/> */}
         
 
         {/* <div className="h-96x bg-amber-300">Oral traditions, literature, or media</div> */}

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   motion,
   useScroll,
@@ -10,88 +10,70 @@ import {
   wrap,
 } from "framer-motion";
 
-const ScrollRevolverText = () => {
+export default function VelocityScrollText() {
+  // How many repeated segments of text (the more, the longer the line)
+  const textRepeatCount = 80;
 
-//   const contentWidth = 4000;
-  // Independent motion values for top and bottom
-  const baseXTop = useMotionValue(0);
-  const baseXBottom = useMotionValue(0);
-
-//   const smoothBaseXTop = useSpring(baseXTop, { damping: 50, stiffness: 150 });
-//   const smoothBaseXBottom = useSpring(baseXBottom, { damping: 50, stiffness: 150 });
-
-
+  // Grab the current Y scroll
   const { scrollY } = useScroll();
+  // Extract velocity (speed of scrolling)
   const rawVelocity = useVelocity(scrollY);
+  // Smooth out that velocity
   const smoothVelocity = useSpring(rawVelocity, {
     damping: 50,
     stiffness: 300,
   });
-
+  // Map the velocity into some factor
   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [1, 5]);
 
+  // Independent motion values for top & bottom lines
+  const baseXTop = useMotionValue(0);
+  const baseXBottom = useMotionValue(0);
+
   useAnimationFrame((_, delta) => {
-    const baseSpeed = 2;
-    const multiplier = 5;
+    // Adjust these for overall speed
+    const baseSpeed = 15;
+    const multiplier = 8;
+    // Move distance based on time delta, speed, & velocity factor
     const move = (delta / 1000) * baseSpeed * multiplier * velocityFactor.get();
 
-    // Top scrolls right to left (negative movement)
-    baseXTop.set(baseXTop.get() + move);
+    // Top line physically moves left (negative move)
+    baseXTop.set(baseXTop.get() - move);
 
-    // Bottom scrolls left to right (positive movement)
-    baseXBottom.set(baseXBottom.get() + move);
+    // Bottom line also moves left in code,
+    // but since it's rotated 180°, it appears to move in the opposite direction
+    baseXBottom.set(baseXBottom.get() - move);
   });
 
-  // Wrap both directions correctly
-  const xTop = useTransform(baseXTop, (v) => `${wrap(-100, 0, v)}%`);
-  const xBottom = useTransform(baseXBottom, (v) => `${wrap(-100, 0, v)}%`);
-//   const xTop = useTransform(smoothBaseXTop, (v) => `${wrap(0, contentWidth, v)}px`);
-//   const xBottom = useTransform(smoothBaseXBottom, (v) => `${wrap(0, contentWidth, v)}px`);
+  // Wrap from -8000px to 0px so there's plenty of text, no gap
+  const xTop = useTransform(baseXTop, (v) => `${wrap(-8000, 0, v)}px`);
+  const xBottom = useTransform(baseXBottom, (v) => `${wrap(-8000, 0, v)}px`);
 
   return (
-    <div className="relative w-full overflow-hidden bg-offwhite h-auto flex flex-col justify-center space-y-2 shadow-md shadow-salmon pb-4 pt-4">
-      {/* Top: scrolls right to left */}
+    <div className="relative w-full overflow-hidden bg-offwhite h-auto flex flex-col justify-center space-y-2 shadow-md shadow-salmon pb-4 pt-4 mb-8">
+      {/* TOP LINE: normal orientation, moves right-to-left */}
       <motion.div
         style={{ x: xTop }}
-        className="flex whitespace-nowrap text-6xl font-bold text-maroon"
+        className="flex whitespace-nowrap text-7xl font-bold text-maroon"
       >
-        {Array.from({ length: 40 }).map((_, i) => (
-          <span key={`top-${i}`} className="mx-12 inline-block">
-            Important Cultural Aspects   Important Cultural Aspects
+        {Array.from({ length: textRepeatCount }).map((_, i) => (
+          <span key={`top-${i}`} className="inline-block px-2">
+            Important Cultural Aspects
           </span>
         ))}
-
-        {/* {[...Array(2)].map((_, batch) => (
-        Array.from({ length: 40 }).map((_, i) => (
-            <span key={`top-${batch}-${i}`} className="mx-12 inline-block">
-            Important Cultural Aspects
-            </span>
-        ))
-        ))} */}
       </motion.div>
 
-      {/* Bottom: scrolls left to right + flipped */}
+      {/* BOTTOM LINE: rotated 180°, so from the user's POV, it goes left-to-right */}
       <motion.div
         style={{ x: xBottom }}
-        className="flex whitespace-nowrap text-6xl font-bold text-maroon rotate-180"
+        className="flex whitespace-nowrap text-7xl font-bold text-maroon rotate-180"
       >
-        {Array.from({ length: 40 }).map((_, i) => (
-          <span key={`bottom-${i}`} className="mx-12 inline-block">
-            Important Cultural Aspects   Important Cultural Aspects
+        {Array.from({ length: textRepeatCount }).map((_, i) => (
+          <span key={`bottom-${i}`} className="inline-block px-2">
+            Important Cultural Aspects
           </span>
         ))}
-        {/* {[...Array(2)].map((_, batch) => (
-            Array.from({ length: 40 }).map((_, i) => (
-                <span key={`bottom-${batch}-${i}`} className="mx-12 inline-block">
-                Important Cultural Aspects
-                </span>
-            ))
-            ))} */}
-
-
       </motion.div>
     </div>
   );
-};
-
-export default ScrollRevolverText;
+}

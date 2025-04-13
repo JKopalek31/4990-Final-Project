@@ -4,7 +4,7 @@ import { LeftContentHeader } from '../../components/LeftContentHeader'
 import  IdentitySignificance  from './IdentitySignificance'
 import CultureCards from './CultureCards'
 import InfiniteCardSlider from './InfiniteCardSlider'
-import ScrollRevolverText from '../../components/VelocityScrollText'
+import VelocityScrollText from "../../components/VelocityScrollText"
 
 import RecordWithSoundBubble from "./CultureCardsTitle"
 
@@ -22,6 +22,8 @@ export const CulturalIdentity = () => {
         />
         
         <IdentitySignificance/>
+        
+        <VelocityScrollText/>
 
         <InfiniteCardSlider/>
 
@@ -30,7 +32,7 @@ export const CulturalIdentity = () => {
 
         {/* <div className="h-96x bg-amber-300">Oral traditions, literature, or media</div> */}
 
-        <CultureCards/>
+        {/* <CultureCards/> */}
         
     </section>
   )

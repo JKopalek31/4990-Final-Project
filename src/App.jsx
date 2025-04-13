@@ -35,6 +35,7 @@ function App() {
       <SmoothScrollAinu/>      
 
       <LanguageProfile />
+      
       <CulturalIdentity />    
       <EndangermentFactors />
       <RevililizationEfforts />

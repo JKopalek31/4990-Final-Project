@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function PulsingBorderCard() {
-  const text = "There is cautious optimism that the language can be preserved and revitalized especially if efforts focus on youth engagement and daily life usage.";
+export default function PulsingBorderCard({children:text}) {
 
   return (
     <motion.div
@@ -11,7 +10,7 @@ export default function PulsingBorderCard() {
         animation: 'borderMotion 5s linear infinite',
       }}
     >
-      <div className="bg-offwhite rounded-xl p-0 text-center text-3xl sm:text-6xl text-maroon">
+      <div className="bg-offwhite rounded-xl p-10 text-center text-3xl sm:text-6xl text-maroon">
         {text}
       </div>
       

@@ -5,6 +5,7 @@ import  IdentitySignificance  from './IdentitySignificance'
 import CultureCards from './CultureCards'
 import InfiniteCardSlider from './InfiniteCardSlider'
 import VelocityScrollText from "../../components/VelocityScrollText"
+import StoriesMediaLiterature from "./StoriesMediaLiterature"
 
 import RecordWithSoundBubble from "./CultureCardsTitle"
 
@@ -29,10 +30,11 @@ export const CulturalIdentity = () => {
 
         {/* <RecordWithSoundBubble/> */}
         
-
+        
         {/* <div className="h-96x bg-amber-300">Oral traditions, literature, or media</div> */}
 
         {/* <CultureCards/> */}
+        <StoriesMediaLiterature/>
         
     </section>
   )

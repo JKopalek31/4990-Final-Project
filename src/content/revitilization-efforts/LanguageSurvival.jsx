@@ -80,7 +80,7 @@ export default function LanguageSurvival() {
         
       ))}
 
-      <AnimatedBlock delay={0.3} className="text-8xl text-center my-6 text-maroon mt-36 mb-20">
+      <AnimatedBlock delay={0.3} className="text-8xl text-center my-6 text-maroon mt-36 mb-10">
         <PulsingBorderCard/>
       </AnimatedBlock>
     </div>

@@ -7,7 +7,7 @@ import LanguageSurvival from './LanguageSurvival'
 export const RevililizationEfforts = () => {
   return (
     // <div>RevililizationEfforts</div>
-    <section id="revitalization-efforts" className="h-auto bg-offwhite pt-20 pb-40">
+    <section id="revitalization-efforts" className="h-auto bg-offwhite pt-20 pb-20">
       {/* <h1 className="text-2xl px-2 md:text-4xl lg:text-6xl font-bold text-maroon text-left">Revitalization Efforts</h1> */}
       <LeftContentHeader
         image="https://picsum.photos/800/600?random=1"

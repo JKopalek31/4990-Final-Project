@@ -28,10 +28,10 @@ export default function Conclusion() {
           <Cloud />
         </div>
 
-        <div className="h-96 w-full bg-gradient-to-b from-blue-950 to-blue-950" />
+        <div className="h-96 w-full bg-gradient-to-b from-blue-950 to-blue-950/80" />
 
         {/* The bottom section with the fisherCartoon image */}
-        <div className="relative min-h-[120vh] bg-gradient-to-b from-blue-950 via-red-400 to-blue-950 backdrop-opacity-90 ">
+        <div className="relative min-h-[120vh] bg-gradient-to-b from-blue-950/80 via-red-400 to-blue-950 backdrop-opacity-90 ">
           <div className=" h-auto w-auto">
             <img
               src={fisherCartoon}

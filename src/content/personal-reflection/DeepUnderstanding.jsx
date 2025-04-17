@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+// import { Cloud } from "lucide-react";
+import Cloud from "../../components/Cloud"
 const cardsData = [
   {
     id: 1,
@@ -31,19 +32,20 @@ export default function FloatStopCards() {
   }));
 
   return (
+    <>
     <div
       style={{
         position: "relative",
         minHeight: "100vh",
         overflow: "hidden",
-        background: "linear-gradient(#cbd5e1, #18181b)",
+        background: 'linear-gradient(180deg, #cbd5e1 0%, #3A3A3E 85%, #18182b 100%)',
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         gap: "3rem",
         padding: "2rem",
-        paddingBottom: "200px",
+        paddingBottom: "20px",
       }}
     >
       {/* Inline keyframes for star twinkle + responsive text */}
@@ -111,7 +113,10 @@ export default function FloatStopCards() {
 
         ))}
       </div>
-    </div>
+      {/* <Cloud />  // 500‑px‑tall full‑width strip */}
+      </div>
+    {/* <Cloud/> */}
+    </>
   );
 }
 

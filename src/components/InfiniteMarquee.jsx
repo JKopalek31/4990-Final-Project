@@ -48,7 +48,7 @@ export default function InfiniteMarquee({
     <div className={`overflow-hidden relative ${className}`}>
       <motion.div 
         ref={containerRef}
-        className="absolute flex whitespace-nowrap" 
+        className="absolute flex whitespace-nowrap text-6xl text-amber-300" 
         style={{ x }}
       >
         {/*

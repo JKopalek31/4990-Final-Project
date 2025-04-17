@@ -4,24 +4,29 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 // Image data array
 const imageData = [
+  // {
+  //   id: 1,
+  //   text: "Canyon",
+  //   url: "https://picsum.photos/800/900?random=90",
+  // },
+  // {
+  //   id: 2,
+  //   text: "Kyoto",
+  //   url: "https://picsum.photos/800/900?random=91",
+  // },
+  // {
+  //   id: 3,
+  //   text: "Forest",
+  //   url: "https://picsum.photos/800/900?random=93",
+  // },
+  // {
+  //   id: 4,
+  //   text: "Vietnam",
+  //   url: "https://picsum.photos/800/900?random=94",
+  // },
   {
     id: 1,
-    text: "Canyon",
-    url: "https://picsum.photos/800/900?random=90",
-  },
-  {
-    id: 2,
-    text: "Kyoto",
-    url: "https://picsum.photos/800/900?random=91",
-  },
-  {
-    id: 3,
-    text: "Forest",
-    url: "https://picsum.photos/800/900?random=93",
-  },
-  {
-    id: 4,
-    text: "Vietnam",
+    text: "Thanks For Reading!",
     url: "https://picsum.photos/800/900?random=94",
   },
 ];
@@ -45,7 +50,7 @@ const ImageItem = ({ text, url }) => {
         />
         <motion.h2
           style={{ scale }}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-red-500 tracking-tight"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl text-center font-bold text-red-500 tracking-tight"
         >
           {text}
         </motion.h2>

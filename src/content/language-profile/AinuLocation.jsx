@@ -33,7 +33,7 @@ export const AinuLocation = () => {
             <strong>Kuril Islands</strong>
           </li>
         </ul>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-4 mb-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-20 mb-auto">
           But today’s population mostly resides in Hokkaido
         </h1>
       </motion.div>

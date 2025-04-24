@@ -2,6 +2,12 @@ import React, { useState } from "react"
 import { motion } from "framer-motion"
 import MotionTitle from "../../components/MotionTitle"
 import PulsingBorderCardChildren from "../../components/PulsingBorderCardChildren"
+import ainuYukarimg from "../../assets/ainuYukarimg.jpg"
+import ainuUepeker from "../../assets/ainuUepeker.jpg"
+import ainuUpopo from "../../assets/ainuUpopo.jpg"
+import ainuMedia from "../../assets/ainuMedia.webp"
+import ainuMuseum from "../../assets/ainuMuseum.jpg"
+import ainuClass from "../../assets/ainuClass.jpeg"
 
 /** 
  * FlippableCard: 
@@ -115,46 +121,45 @@ function FlippableCard({ frontImage, frontTitle, backTitle, backContent }) {
 export default function AinuCultureFlipShowcase() {
   const cards = [
     {
-      frontImage: "https://picsum.photos/400/300?random=101",
+      frontImage: ainuYukarimg,
       frontTitle: "Epic Poems (Yukar)",
       backTitle: "Heroic Narratives",
       backContent:
-        "Stories of gods and ancestors forming the backbone of Ainu mythic heritage.",
+        "Yukar are long narrative poems—half song, half storytelling—performed by the Indigenous Ainu of northern Japan (Hokkaidō) and Sakhalin. A single performance can last from a few minutes to several hours and relates the adventures of gods (kamuy), culture heroes, animals, or legendary humans.",
     },
     {
-      frontImage: "https://picsum.photos/400/300?random=102",
+      frontImage: ainuUepeker,
       frontTitle: "Folk Tales (Uepeker)",
       backTitle: "Moral Lessons",
       backContent:
-        "Short, moral stories focusing on nature, animals, and everyday life in Ainu tradition.",
+        "Uepeker are short, spoken Ainu folktales—everyday prose stories told in a natural voice rather than chanted. Lasting only a few minutes, each tale relates humorous trickster exploits, place-name legends, or moral fables drawn from village life and encounters with animal spirits or minor deities.",
     },
     {
-      frontImage: "https://picsum.photos/400/300?random=103",
+      frontImage: ainuUpopo,
       frontTitle: "Communal Songs (Upopo)",
       backTitle: "Repetitive Chants",
       backContent:
-        "Performed in groups with repeated patterns, reflecting communal unity and identity.",
+        "Upopo are short Ainu communal songs—rhythmic, repetitive chants performed while beating time on a wooden tray, clapping, or dancing in a circle. Each piece lasts only seconds to a few minutes and features repeated vocables or brief refrains, serving both as work songs and as social‐bonding music at gatherings and rituals.",
     },
     {
-      frontImage: "https://picsum.photos/400/300?random=104",
-      frontTitle: "Language Revival",
+      frontImage: ainuClass,
+      frontTitle: "Language Education",
       backTitle: "Modern Efforts",
-      backContent:
-        "Radio programs, museum events, children's books fueling Ainu language revival.",
+      backContent:"Community language nests immerse preschoolers in Ainu play, evening classes guide parents through everyday phrases, and online courses pair video drills with live tutors. Together, childcare, adult study, and digital learning are rebuilding a speaker base across generations.",
     },
     {
-      frontImage: "https://picsum.photos/400/300?random=105",
-      frontTitle: "🍏 Radio & Children’s Books",
+      frontImage: ainuMedia,
+      frontTitle: "Radio & Children’s Books",
       backTitle: "Media Initiatives",
       backContent:
-        "Ainu radio programs along with children’s books, passing on language to younger generations.",
+        "Radio shows weave Ainu phrases into daily news, museum workshops let families hear the language live, and new picture books tuck Ainu words into bedtime. Together, broadcast, culture, and kids’ media are nudging the language back into homes and public life.",
     },
     {
-      frontImage: "https://picsum.photos/400/300?random=106",
-      frontTitle: "🫐 Language Courses & Events",
+      frontImage: ainuMuseum,
+      frontTitle: "Language Courses & Events",
       backTitle: "Community Hubs",
       backContent:
-        "Classes and museum events (e.g., Upopoy National Ainu Museum) vital for Ainu language teaching.",
+        "Local circles at community centers and weekend gatherings at Upopoy Museum keep Ainu alive. Shared songs, crafts, and casual language chats turn every meeting into a living classroom. These grassroots gatherings bring together elders and young people, letting the language flow naturally across generations.",
     },
   ]
 

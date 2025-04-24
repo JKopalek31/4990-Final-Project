@@ -41,6 +41,7 @@ export const Navbar = () => {
   }, [isOpen]);
 
   return (
+    <section id="title">
     <nav className="fixed top-0 left-0 w-full bg-transparent z-50 px-6 py-3 flex items-center justify-between h-20 transition-all duration-300">
       {/* Left: Logo */}
       <div className="flex items-center space-x-6">
@@ -63,6 +64,9 @@ export const Navbar = () => {
           }`}
         >
           <div className="flex flex-col p-5 space-y-4 text-xl">
+          <Link to="title" smooth duration={500} className="cursor-pointer hover:border border-offwhite p-3 rounded-sm">
+              Title
+            </Link>
             <Link to="language-profile" smooth duration={500} className="cursor-pointer hover:border border-offwhite p-3 rounded-sm">
               Language Profile
             </Link>
@@ -85,5 +89,6 @@ export const Navbar = () => {
         </div>
       </div>
     </nav>
+    </section>
   );
 };

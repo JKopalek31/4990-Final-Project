@@ -1,6 +1,10 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { Landmark, Globe, ShieldCheck } from "lucide-react"
+import frpac from "../../assets/frpac.jpg"
+import ainuSymbol from "../../assets/ainuSymbol.jpg"
+import japanSecretatiat from "../../assets/japanSecretatiat.png"
+import unesco from "../../assets/unesco.png"
 
 const orgs = [
   {
@@ -9,7 +13,7 @@ const orgs = [
     org: "Foundation for Research and Promotion of Ainu Culture",
     description:
       "A major non-governmental organization supporting Ainu language documentation, education, and cultural transmission.",
-    image: "https://picsum.photos/seed/frpac/400/300",
+    image: ainuSymbol,
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-white" />,
@@ -17,7 +21,7 @@ const orgs = [
     org: "Ministry of Education & Cabinet Secretariat",
     description:
       "Recognized the Ainu as Indigenous in 2008 and funds language revitalization programs and policy initiatives.",
-    image: "https://picsum.photos/seed/japan/400/300",
+    image: japanSecretatiat,
   },
   {
     icon: <Globe className="w-8 h-8 text-white" />,
@@ -25,7 +29,7 @@ const orgs = [
     org: "UNESCO & International Indigenous Rights Orgs",
     description:
       "Push global endangered language frameworks and visibility for Ainu cultural and linguistic survival.",
-    image: "https://picsum.photos/seed/unesco/400/300",
+    image: unesco,
   },
 ]
 

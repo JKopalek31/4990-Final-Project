@@ -1,6 +1,13 @@
 import React, { useState, useRef, useEffect } from "react"
 import { motion, useInView } from "framer-motion"
 
+import hokkaidoLinguists from "../../assets/hokkaidoLinguists.jpg"
+import ainuDictionary from "../../assets/ainuDictionary.jpg"
+import ainuLanguageNest from "../../assets/ainuLanguageNest.jpg"
+import ainuClasses from "../../assets/ainuClasses.jpg"
+import ainuTv from "../../assets/ainuTv.jpg"
+
+
 /** A small custom hook to detect desktop vs. mobile via screen width */
 function useIsDesktop(minWidth = 1024) {
   const [isDesktop, setIsDesktop] = useState(
@@ -20,39 +27,39 @@ function useIsDesktop(minWidth = 1024) {
 
 const cards = [
   {
-    title: "Colonization & Historical Oppression",
+    title: "Field Records",
     description:
-      "During Japan’s colonization of Hokkaido in the 19th century, Ainu people were systematically assimilated. The government banned Ainu cultural practices and prohibited the language in schools and public life...",
+      "Hokkaidō University AINU Project, Waseda U., Kyoto U., and the Endangered Languages Documentation Programme (ELDP) fund expeditions to record the last fluent speakers (audio, video, elicited narratives).",
     icon: "🌏",
-    image: "https://picsum.photos/800/900?random=21",
+    image: hokkaidoLinguists,
   },
   {
-    title: "Migration & Urbanization",
+    title: "Lexicography & Corpora",
     description:
-      "As many Ainu families moved to urban centers, the pressure to conform intensified. In cities, there was little space for cultural preservation, and many Ainu concealed their identity due to discrimination...",
+      "FRPAC maintains an online Ainu-Japanese-English dictionary. Linguists Refsing, Tamura, and Shibatani contribute updates and new information.",
     icon: "🏙️",
-    image: "https://picsum.photos/800/900?random=22",
+    image: ainuDictionary,
   },
   {
-    title: "Economic & Political Pressures",
+    title: "Community Language Nests",
     description:
-      "For decades, policies prioritized economic assimilation over cultural preservation. Ainu people faced systemic discrimination, making Japanese fluency essential for access to jobs, education, and mobility...",
+      "A = Us Kor project in Shiraoi, Sapporo. An emmersive language nest, and a newer program in Asahikawa that put preschoolers together with elder speakers 4–5 days a week.",
     icon: "💼",
-    image: "https://picsum.photos/800/900?random=23",
+    image: ainuLanguageNest,
   },
   {
-    title: "Language Shift to Dominant Languages",
+    title: "School & Adult Classes",
     description:
-      "Dominance of Japanese in public life led to language shift. As fewer used Ainu daily, intergenerational transmission broke down, and the language fell into disuse...",
+      "50-plus municipal boards (especially in eastern Hokkaidō) now offer after-school Ainu lessons. Also, Upopoy National Ainu Museum trains instructors to teach Ainu programatically and realistically.",
     icon: "🗣️",
-    image: "https://picsum.photos/800/900?random=24",
+    image: ainuClasses,
   },
   {
-    title: "Language Classes & Community Centers",
+    title: "Media & Technology",
     description:
-      "Local cultural centers, like Upopoy, offer classes. These programs help a new generation learn and engage with Ainu, supporting its revival...",
+      "NHK‐FM monthly Ainu radio slot; AINU Times quarterly magazine; Indie devs (e.g., Ainu Today app) supported by the 2019 Ainu Promotion Act grants.",
     icon: "🔐",
-    image: "https://picsum.photos/800/900?random=20",
+    image: ainuTv,
   },
 ]
 
@@ -161,7 +168,7 @@ export const PreservationEfforts = () => {
                 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-slate-900 text-6xl sm:text-8xl md:text-8xl lg:text-8xl font-bold">
+                <h3 className="text-red-400 text-6xl sm:text-8xl md:text-8xl lg:text-8xl font-bold">
                   {card.title}
                 </h3>
               </motion.div>

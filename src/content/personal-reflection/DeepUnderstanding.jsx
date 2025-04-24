@@ -6,17 +6,17 @@ const cardsData = [
   {
     id: 1,
     front: "Language",
-    back: "Card 1 (back): content behind the front side.",
+    back: "By researching the Ainu language and people, My perspective on endangered languages have changed significantly. Seeing how depleated the population for such a rich culture becoming almost erraticated is sad and for trivial reasons.",
   },
   {
     id: 2,
     front: "Identity",
-    back: "Card 2 (back): a bit more text for demonstration.",
+    back: "Seeing the impact of traditions and rituals passed down over centuries helped me see how important these aspects are to identity. When you embrace your identity, you should be proud of what you are and not feel the preasure of external forces.",
   },
   {
     id: 3,
     front: "Culture",
-    back: "Card 3 (back): hidden behind the front side until open.",
+    back: "When looking at places like Upopoy National Park, the importance of preserving endangered ways-of-life is highlighted. The dire need to support culture preservation efforts has become more important more and more languages go extinct every day.",
   },
 ];
 
@@ -164,15 +164,15 @@ function FloatingSlideCard({ front, back }) {
           position: "absolute",
           top: 0,
           left: 0,
-          width: "100%",
+          width: "300px",
           height: "400px",
           borderRadius: "0.5rem",
-          backgroundColor: "#BBDEFB",
+          backgroundColor: "transparent",
           padding: "1rem",
           boxSizing: "border-box",
         }}
       >
-        <p style={{ margin: 0, color: "#1A237E" }}>{back}</p>
+        <p style={{ margin: 0, color: "#EEEBDD", fontSize: "1.25rem" }}>{back}</p>
       </div>
       {/* The front side: slides RIGHT if revealed */}
       <motion.div

@@ -127,17 +127,21 @@ export const LinguisticFeatures = () => {
           ">
             <li>
               <strong>
-                Ainu forms words and expresses grammatical relationships via affixes...
+                {/* Ainu forms words and expresses grammatical relationships via affixes... */}
+                Polysynthetic & agglutinative morphology. Verbs may incorporate nouns/adverbs and take long strings of derivational affixes (causative, applicative, passive, reflexive, reciprocal).
               </strong>
             </li>
             <li>
               <strong>
-                Typically follows Subject-Object-Verb word order.
+                Verbs obligatorily carry agreement prefixes (or suffix ‑as) indexing both subject and object. A direct‑inverse system surfaces: prefixes vary according to a person hierarchy
+                {/* Typically follows Subject-Object-Verb word order. */}
               </strong>
             </li>
             <li>
               <strong>
-                Distinguishes animate/inanimate nouns, affecting verb conjugation.
+                {/* Distinguishes animate/inanimate nouns, affecting verb conjugation. */}
+                Syntax Strictly head‑final: SOV order; genitive‑before‑noun; postpositions; sub‑clauses precede main clause. Polar questions add particle "ya" or rising intonation.
+
               </strong>
             </li>
           </ul>
@@ -181,12 +185,25 @@ export const LinguisticFeatures = () => {
           ">
             <li>
               <strong>
-                Ainu employs a pitch accent system; pitch changes can alter word meaning.
+                {/* Ainu employs a pitch accent system; pitch changes can alter word meaning.  */}
+                5 vowels (i e a u o) and 12 consonants (p t k c s h ), glottal stop ( r m n w y).
               </strong>
             </li>
             <li>
               <strong>
-                Syllables generally follow a Consonant-Vowel (CV) pattern...
+                {/* Syllables generally follow a Consonant-Vowel (CV) pattern... */}
+
+                (C)V(C); no consonant clusters. Glottal stop routinely inserted before vowel‑initial words.
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Pitch‑accent: one high tone per word—typically on first heavy syllable or second light syllable; unaccented clitics keep host’s melody. 
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Final codas restricted to (k, s, t, n, m, r, p); "h" allowed word‑finally only in Sakhalin variety.
               </strong>
             </li>
           </ul>
@@ -236,6 +253,11 @@ export const LinguisticFeatures = () => {
             <li>
               <strong>
                 Latin Alphabet | Often with special characters for unique Ainu phonemes.
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Early missionaries (John Batchelor, 1880s) devised bespoke Roman orthographies; Though the 1800-1900's, texts exist in both Roman and katakana. Unicode now supports the full Ainu katakana block. 
               </strong>
             </li>
           </ul>

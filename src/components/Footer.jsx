@@ -4,7 +4,7 @@ import showcase from "../assets/fisherShowcase.PNG"
 
 export const Footer = () => {
   return (
-    <footer className="bg-maroon text-gray-300 pt-4 pb-2 px-0 text-left">
+    <footer className="bg-maroon text-gray-300 pt-16 pb-2 px-0 text-left">
       {/* <div className="max-w-(--breakpoint-lg) mx-auto flex flex-col space-y-2 items-start"> */}
       <div className="grid grid-cols-3">
         {/* Logo */}

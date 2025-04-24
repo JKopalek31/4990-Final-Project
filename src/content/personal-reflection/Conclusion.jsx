@@ -31,7 +31,7 @@ export default function Conclusion() {
         <div className="h-96 w-full bg-gradient-to-b from-blue-950 to-blue-950/80" />
 
         {/* The bottom section with the fisherCartoon image */}
-        <div className="relative min-h-[120vh] bg-gradient-to-b from-blue-950/80 via-red-400 to-blue-950 backdrop-opacity-90 ">
+        <div className="relative min-h-[120vh] bg-gradient-to-b from-blue-950/80 via-red-400 to-blue-950 backdrop-opacity-90">
           <div className=" h-auto w-auto">
             <img
               src={fisherCartoon}
@@ -40,6 +40,7 @@ export default function Conclusion() {
             />
           </div>
         </div>
+        <div className="bg-gradient-to-b from-black to-black/95 h-40"/>
       </div>
     </div>
   );

@@ -1,31 +1,38 @@
 import React, { useRef, useState, useEffect } from "react"
 import { motion } from "framer-motion"
-/** Your original text cards */
+
+import ainuGods from "../../assets/ainuGods.jpg"
+import ainuStoryLine from "../../assets/ainuStoryLine.jpg"
+import ainuWorldView from "../../assets/ainuWorldView.avif"
+import ainuSymbol from "../../assets/ainuSymbol.jpg"
+import ainuRevital from "../../assets/ainuRevital.webp"
+
+
 const sampleCards = [
   {
     title: "Spiritual Connection",
-    image: "https://picsum.photos/800/600?random=10",
-    description: "The Ainu language is deeply tied to spirituality..."
+    image: ainuGods,
+    description: "The Ainu language is deeply tied to spirituality."
   },
   {
     title: "Cultural Expression",
-    image: "https://picsum.photos/800/600?random=11",
-    description: "Ceremonial songs (yukar), chants, and invocations..."
+    image: ainuStoryLine,
+    description: "Ceremonial songs (yukar), chants, and invocations."
   },
   {
     title: "Preserving Worldview",
-    image: "https://picsum.photos/800/600?random=13",
-    description: "Language preserves the Ainu perspective..."
+    image: ainuWorldView,
+    description: "Language preserves the Ainu perspective."
   },
   {
     title: "Symbol of Resistance",
-    image: "https://picsum.photos/800/600?random=14",
-    description: "Speaking Ainu has been an act of resistance..."
+    image: ainuSymbol,
+    description: "Speaking Ainu has been an act of resistance."
   },
   {
     title: "Revival & Reclamation",
-    image: "https://picsum.photos/800/600?random=15",
-    description: "Today, the Ainu language is central to revitalization..."
+    image: ainuRevital,
+    description: "Today, the Ainu language is central to revitalization."
   }
 ]
 

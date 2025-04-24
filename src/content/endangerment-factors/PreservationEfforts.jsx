@@ -1,32 +1,37 @@
 import React, { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence, useInView } from "framer-motion"
+import ainuColonialization from "../../assets/ainuColonialization.jpg"
+import ainuMigration from "../../assets/ainuMigration.webp"
+import ainuMeiji from "../../assets/ainuMeiji.jpg"
+import ainuJapan from "../../assets/ainuJapan.avif"
+import ainuDisapearing from "../../assets/ainuDisapearing.jpg"
 
 /** SAMPLE DATA */
 const cardsData = [
   {
     title: "Colonization & Historical Oppression",
-    description: "During Japan’s colonization of Hokkaido in the 19th century...",
-    image: "https://picsum.photos/800/900?random=21",
+    description: "During Japan’s colonization of Hokkaido in the 19th century, Ainu people were systematically assimilated. The government banned Ainu cultural practices and prohibited the language in schools and public life.",
+    image: ainuColonialization,
   },
   {
     title: "Migration & Urbanization",
-    description: "As many Ainu families moved to urban centers...",
-    image: "https://picsum.photos/800/900?random=22",
+    description: "As many Ainu families moved to urban centers, the pressure to conform intensified. In cities, there was little space for cultural preservation, and many Ainu concealed their identity due to discrimination.",
+    image: ainuMigration,
   },
   {
     title: "Economic & Political Pressures",
-    description: "For decades, government policies prioritized economic assimilation...",
-    image: "https://picsum.photos/800/900?random=23",
+    description: "For decades, policies prioritized economic assimilation over cultural preservation. Ainu people faced systemic discrimination, making Japanese fluency essential for access to jobs, education, and mobility.",
+    image: ainuMeiji,
   },
   {
     title: "Language Shift to Dominant Languages",
-    description: "Dominance of Japanese in public life led to language shift...",
-    image: "https://picsum.photos/800/900?random=24",
+    description: "Dominance of Japanese in public life led to language shift. As fewer used Ainu daily, intergenerational transmission broke down, and the language fell into disuse.",
+    image: ainuJapan,
   },
   {
-    title: "Language Classes & Community Centers",
-    description: "Local cultural centers, like Upopoy, offer classes and workshops...",
-    image: "https://picsum.photos/800/900?random=25",
+    title: "Diminishing Number of Speakers",
+    description: "Local cultural centers, like Upopoy, offer classes. These programs help a new generation learn and engage with Ainu, supporting its revival.",
+    image: ainuDisapearing,
   },
 ]
 
@@ -62,7 +67,7 @@ const CardGrid = React.memo(function CardGrid({ cards, onCardClick }) {
                 className="rounded-lg w-full h-full object-cover"
               />
               <div className="absolute top-0 left-0 px-4 py-2 sm:px-6 sm:py-3 max-w-sm text-left">
-                <h3 className="text-slate-900 text-6xl sm:text-8xl font-semibold leading-tight">
+                <h3 className="text-red-400 text-6xl sm:text-8xl font-semibold leading-tight">
                   {card.title}
                 </h3>
               </div>

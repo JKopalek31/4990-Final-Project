@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-// import Navbar from './components/Navbar.jsx'
-import  {Navbar}  from './components/Navbar'
+import  { Navbar }  from './components/Navbar'
 // import {Carousel} from './components/Carousel'
 import Carousel from './components/Carousel'
 import { Title } from './components/Title'
@@ -36,19 +35,12 @@ function App() {
       <SmoothScrollAinu/>      
 
       <LanguageProfile />
-      
       <CulturalIdentity />    
       <EndangermentFactors />
       <RevililizationEfforts />
-
-      
       <PersonalReflection />
 
       <WorksCited/>
-
-
-      {/* <Carousel /> */}
-      {/* <ImageEffect/> */}
 
       <Footer/>
     </div>

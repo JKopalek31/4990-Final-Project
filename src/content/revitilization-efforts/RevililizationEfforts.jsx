@@ -3,6 +3,7 @@ import { LeftContentHeader } from '../../components/LeftContentHeader'
 import { RevitalizationPrograms } from './RevitilizationPrograms'
 import {OrganizationsSupport} from './OrginizationsSupport'
 import LanguageSurvival from './LanguageSurvival'
+import ainuPark from '../../assets/ainuPark.jpg'
 
 export const RevililizationEfforts = () => {
   return (
@@ -10,9 +11,9 @@ export const RevililizationEfforts = () => {
     <section id="revitalization-efforts" className="h-auto bg-offwhite pt-20 pb-20">
       {/* <h1 className="text-2xl px-2 md:text-4xl lg:text-6xl font-bold text-maroon text-left">Revitalization Efforts</h1> */}
       <LeftContentHeader
-        image="https://picsum.photos/800/600?random=1"
+        image={ainuPark}
         title="Revitilization Efforts"
-        description="Explore the origins and traditions of the Ainu people."
+        description="Explore the efforts to preserve Ainu people and their culture."
       />
       <RevitalizationPrograms/>
       <OrganizationsSupport/>

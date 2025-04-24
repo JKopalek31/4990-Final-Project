@@ -66,31 +66,31 @@ export default function ImportantIdeas() {
   const circleData = [
     {
       id: 1,
-      title: "Circle #1",
+      title: "Culture should be celebrated. Embracing your routes is noble and promotes a more enclusive environment for everyone involved.",
       question: "What are the most important ideas you've learned?",
       image: "https://picsum.photos/300/200?random=1",
     },
     {
       id: 2,
-      title: "Circle #2",
+      title: "Language and culture are tied very closely and should be considered as one entity(can't have one without the other).",
       question: "How has your perspective changed in this course?",
       image: "https://picsum.photos/300/200?random=2",
     },
     {
       id: 3,
-      title: "Circle #3",
+      title: "This class challenged my thinking of sociability within cultures. Thinking about how people act in different situations.",
       question: "What assumptions have you reconsidered?",
       image: "https://picsum.photos/300/200?random=3",
     },
     {
       id: 4,
-      title: "Circle #4",
+      title: "Learning about the obsurd number of endangered languages broaded my perspective on language preservation efforts.",
       question: "How has researching your chosen language helped?",
       image: "https://picsum.photos/300/200?random=4",
     },
     {
       id: 5,
-      title: "Circle #5",
+      title: "Language plays a huge roll in having an identity associated with your lineage. You being yourself and yourself only.",
       question: "What connections exist between language and identity?",
       image: "https://picsum.photos/300/200?random=5",
     },
@@ -374,13 +374,13 @@ export default function ImportantIdeas() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
               >
-                <h2 className="text-xl font-bold mb-3">{ball.title}</h2>
-                <img
+                <h2 className="text-2xl sm:text-6xl font-bold mb-3">{ball.title}</h2>
+                {/* <img
                   src={ball.image}
                   alt="Bubble content"
                   className="w-56 h-36 object-cover rounded mb-2 mx-auto"
-                />
-                <p className="text-base">{ball.question}</p>
+                /> */}
+                {/* <p className="text-base">{ball.question}</p> */}
               </motion.div>
             )}
           </motion.div>

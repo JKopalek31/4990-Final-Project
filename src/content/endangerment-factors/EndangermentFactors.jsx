@@ -2,6 +2,7 @@ import React from 'react'
 import { PreservationEfforts } from './PreservationEfforts'
 import { RightContentHeader } from '../../components/RightContentHeader'
 import EndangermentReasons from './EndangermentReasons'
+import ainuEndangerment from "../../assets/ainuEndangerment.webp"
 
 export const EndangermentFactors = () => {
   return (
@@ -9,9 +10,9 @@ export const EndangermentFactors = () => {
     <section id="endangerment-factors" className="h-auto bg-offwhite pt-20 pb-4">
                 {/* <h1 className="text-2xl px-2 md:text-4xl lg:text-6xl font-bold text-maroon text-left">Engangerment Factors</h1> */}
                 <RightContentHeader
-                          image="https://picsum.photos/800/600?random=1"
+                          image= {ainuEndangerment}
                           title="Engangerment Factors"
-                          description="Explore the origins and traditions of the Ainu people."
+                          description="Explore the history and plight of the Ainu people."
                         />
                 <PreservationEfforts/>
 

@@ -94,15 +94,15 @@ const IdentitySignificance = () => {
               ">
                 <li>
                   <strong>Who speaks this language?</strong><br />
-                  The language is spoken by members of the ethnic group, community, or region associated with it.
+                  The language is spoken by members of the ethnic group, community, and region associated with it. Primarily the Ainu population in Hokkaido who embrace the language.
                 </li>
                 <li>
                   <strong>Cultural Importance:</strong><br />
-                  The language is deeply tied to traditions, beliefs, and the historical identity of its speakers.
+                  The language is deeply tied to traditions, beliefs, and the historical identity of its speakers. These markers of identity that are kept alive often though festivals and preservation events meant to spread awareness for the indiginous group as well as preserve herritiage.
                 </li>
                 <li>
                   <strong>Oral traditions, literature, or media:</strong><br />
-                  This language features unique folklore, poetry, songs, and storytelling traditions passed down through generations.
+                  This language features unique folklore, poetry, songs, and storytelling traditions passed down through generations. These tails have been pivital in world building and providing a basis for the Ainu peoples world view.
                 </li>
               </ul>
             </div>

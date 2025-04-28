@@ -259,8 +259,8 @@ export const ImageCitationsBank = [
         //Please fix me
         {
             image:personalReflection,
-            link:"https://chatgpt.com/",
-            description: "Cartoon Image of SJFU at Night",
+            link:"https://www.newleaders.org/blog/self-reflection-and-leadership-create-a-healthier-and-happier-school-culture-by-looking-within",
+            description: "Self-Reflection and Leadership",
         },
 
         {

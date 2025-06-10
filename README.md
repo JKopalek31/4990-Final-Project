@@ -19,7 +19,7 @@ The Ainu people are the Indigenous inhabitants of Hokkaido, Japan. Their languag
 - **Frontend**: React.js
 - **Styling**: Tailwind CSS
 - **Animation**: Framer Motion
-- **Deployment**: Coming Soon
+- **Deployment**: Github Pages
 
 ---
 
